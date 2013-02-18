@@ -11,7 +11,7 @@ all: $(OUTPUT)
 $(OUTPUT): $(OBJS)
 	g++ $(OBJS) -o $(OUTPUT)
 
-%.o: %.c
+%.o: %.cpp
 	g++ -c $< -o $@
 
 clean: 

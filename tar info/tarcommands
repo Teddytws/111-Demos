@@ -2,24 +2,25 @@ Creating an archive using tar command
 
 at the command line, in the folder with the files you want to tar
 
-tar cvf archive_name.tar *
+tar cvzf archive_name.tar.gz *
 
 What the flags mean
 c – create a new archive
 v – verbosely list files which are processed.
+z- filter the archive through gzip
 f – following is the archive file name
 * - all files in this directory
 
 
 Viewing the files in your tar
 
- tar tvf archive_name.tar
+ tar tvfz archive_name.tar.gz
 
 
 
 Extracting files from a tar
 
-tar xvf archive_name.tar
+tar xvfz archive_name.tar.gz
 
 
 
