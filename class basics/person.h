@@ -1,9 +1,11 @@
 
-#ifndef ADDMACHINE_H
-#define ADDMACHINE_H
+#ifndef PERSON_H
+#define PERSON_H
 
 #include <iostream>
 #include <string>
+
+using namespace std;
 class Person
 {
 	
@@ -17,7 +19,7 @@ class Person
 
 	private:
 
-		int secret;
+		string secret;
 
 };
 
