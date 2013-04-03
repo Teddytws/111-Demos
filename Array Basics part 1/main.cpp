@@ -4,7 +4,7 @@
 #include "printarr.h"
 
 //find a specific number in an array
-void findNum (int arr[], int value);
+void findNum (int arr[], int num);
 //find the larget/smallest number in array
 void findLargest (int arr[]);
 //reverse the array
@@ -25,36 +25,31 @@ int main () {
 	ap.arrPrintOne(sorted);
 	ap.arrPrintOne(unsorted);
 
-	findNum(unsorted, 22);
-
+	findNum(unsorted, 120);
 	findLargest(unsorted);
-
 	reverseArr(unsorted);
-
 	sortArr(unsorted);
-
 
 
 }
 
-void findNum (int arr[], int value) {
+void findNum (int arr[], int num) {
 
 	bool found = false;
+
 	for (int i = 0; i < 10; i++) {
 
-		if (arr[i] == value) {
+		if (arr[i] == num) {
 			found = true;
+			break;
 		}
 	}
 
-	if (found) {
+	if (found)
+		std::cout << " the number " << num << " is in the array" << std::endl;
+	else
+		std::cout << " the number " << num << " was not found" << std::endl;
 
-		std::cout << "found it" << std::endl;
-	}
-	else {
-		std::cout << "didnt find it" << std::endl;
-
-	}
 }
 
 
@@ -62,52 +57,57 @@ void findLargest (int arr[]) {
 
 	int largest = arr[0];
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 1; i < 10; i++) {
 
-		if (arr[i]>largest) {
+		if (arr[i] > largest)
 			largest = arr[i];
-		}
+
 	}
 
 	std::cout << "the largest number is " << largest << std::endl;
-
-
 
 }
 
 void reverseArr (int arr[]) {
 
 	int temp;
-	for(int i = 0, j = 9; i < 10/2; i++, j--) {
 
-		temp = arr[j];
-		arr[j] = arr[i];
-		arr[i] = temp;
-	}
+	for (int i= 0, j = 9; i < 10/2; i++, j--) {
+
+		temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+
+	} 
 	PrintArray ap;
+
 	ap.arrPrintOne(arr);
+
 }
+
 
 void sortArr (int arr[]) {
 
 	int temp;
+
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 10; j++) {
 
 			if (arr[i] < arr[j]) {
-				temp = arr[j];
-				arr[j] = arr[i];
-				arr[i] = temp;
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
 			}
+
 		}
+
 	}
 
-PrintArray ap;
+	PrintArray ap;
 
-ap.arrPrintOne (arr);
-
-
+	ap.arrPrintOne(arr);
 }
+
 
 
 
