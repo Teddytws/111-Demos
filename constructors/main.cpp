@@ -8,19 +8,13 @@ int main () {
 	
 
 
-	Student teddy("teddy", 5, "CSCI");
-	
-	{
-		Student scott("Scott", 8, "PHIL");
-
-	}
-
-
+	Student teddy("Teddy", 10, "CSCI");
+	Student scott("Scott", 9, "PHIL");
 
 
 
 	cout << teddy.getName() << endl;
-	//cout << scott.getName() << endl;
+	cout << scott.getName() << endl;
 
 
 

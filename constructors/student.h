@@ -7,7 +7,8 @@ class Student {
 	public:
 
 	Student();
-	Student (string newName, int newID, string newMajor);
+	Student(string newName, int newID, string newMajor);
+
 	~Student();
 
 	string getName();
