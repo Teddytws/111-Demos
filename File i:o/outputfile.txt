@@ -1,2 +1,2 @@
-3
-This is line number 1
+2
+This is sentence 1
