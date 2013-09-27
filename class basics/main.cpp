@@ -1,22 +1,23 @@
 
 
-#include "person.h"
-
-int main () {
-		
+#include "house.h"
 
 
-		Person teddy;  //declare a person object named teddy
-		Person jenny;  //declare a person object named jenny
+int main() {
 
-		teddy.age = 30; //set PUBLIC variable age = 30
-		jenny.age = 22; //set PUBLIC variable age = 22
+House myhouse;
 
-		teddy.driveToTheStore("Safeway");  //Use public function
-		jenny.driveToTheStore("Raileys");
+House scottsHouse;
 
-		teddy.setSecret("isnt really 30");
-		jenny.setSecret("is really 22");
+myhouse.color = "blue";
+myhouse.bedrooms = 10;
+
+scottsHouse.color = "pink";
+scottsHouse.bedrooms = 0;
+
+myhouse.print();
+scottsHouse.print();
+
 
 
 
