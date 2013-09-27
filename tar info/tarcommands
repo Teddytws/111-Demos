@@ -1,0 +1,48 @@
+Creating an archive using tar command
+
+at the command line, in the folder with the all the files you want to tar
+
+tar cvzf archive_name.tar.gz *  //will tar up all file in folder
+
+for specifing files
+
+tar cvzf archive_name.tar.gz name_of_new_zipped_file file1.cpp file1.h main.cpp
+
+What the flags mean
+c – create a new archive
+t - view archive titles
+x - extract
+v – verbosely list files which are processed.
+z- filter the archive through gzip
+f – following is the archive file name
+* - all files in this directory
+
+
+Viewing the files in your tar
+
+ tar tvfz archive_name.tar.gz
+
+
+
+Extracting files from a tar
+
+tar xvfz archive_name.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
