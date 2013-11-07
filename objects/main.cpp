@@ -16,7 +16,8 @@ cout << teddy.get_age() << endl;
 teddy.set_age(21);
 cout << teddy.get_age() << endl;
 
-Person jenny(23, "jenny", 'f');
+
+Person jenny(21, "jenny", 'f');
 cout << jenny.get_age() << endl;
 
 
