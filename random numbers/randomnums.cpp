@@ -7,9 +7,7 @@
 using namespace std;
 int main() {
 	
-	//seed the random number algorithm
-	srand(time(NULL));
-	//srand(5);
+	srand(time(0));
 
 	cout << "max rand is " << RAND_MAX << endl;
 
@@ -17,9 +15,6 @@ int main() {
 	cout << "    " << rand() % 10 + 1;
 	}	
 	cout << endl;
-
-
-
 
 
 	return 0;
@@ -31,6 +26,15 @@ int main() {
 
 
 
+/*
+	cout << "max rand is " << RAND_MAX << endl;
+
+	for (int i = 0; i < 10; i++) {
+	cout << "    " << rand() % 10 + 1;
+	}	
+	cout << endl;
+
+*/
 
 
 
